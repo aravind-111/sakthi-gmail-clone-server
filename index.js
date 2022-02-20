@@ -40,14 +40,14 @@ app.get('/', (request, response, next) => response.status(200).json('MERN Gmail 
 app.use('/api/v1/account', accountRoutes);
 app.use('/api/v1/email', emailRoutes);
 
-if (process.env.NODE_ENV === 'production') {
+// if (process.env.NODE_ENV === 'production') {
 
-  app.use(express.static(path.join(__dirname, 'client/build')));
+//   app.use(express.static(path.join(__dirname, 'client/build')));
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
-  });
-}
+//   app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+//   });
+// }
 // arcane-inlet-86488
 
 app.listen(process.env.PORT || 8080, () => {
