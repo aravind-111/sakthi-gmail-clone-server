@@ -8,10 +8,7 @@
     "node": "14.0.0"
   },
   "scripts": {
-    "start": "nodemon index.js || node index.js",
-    "deploy": "gh-pages  -d build",
-    "predeploy": "npm run build",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "start": "nodemon index.js || node index.js"
   },
   "author": "Prashant",
   "license": "ISC",
