@@ -1,5 +1,5 @@
 {
-  "homepage": "https://localhost:8080/api/v1",
+  "homepage": "https://sakthi-gmail-server.herokuapp.com/api/v1",
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
